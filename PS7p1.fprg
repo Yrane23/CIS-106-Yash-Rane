@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="shiri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-10 05:12:59 PM"/>
+        <attribute name="created" value="c2hpcmk7UEM7MjAyNC0wMy0xMDswNTowMTozNyBQTTsxOTYy"/>
+        <attribute name="edited" value="c2hpcmk7UEM7MjAyNC0wMy0xMDswNToxMjo1OSBQTTsxOzIwNzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="srartv" type="Integer" array="False" size=""/>
+            <declare name="stopv" type="Integer" array="False" size=""/>
+            <declare name="incrv" type="Integer" array="False" size=""/>
+            <assign variable="starv" expression="1"/>
+            <assign variable="stopv" expression="25"/>
+            <assign variable="incrv" expression="2"/>
+            <while expression="starv &lt;= stopv">
+                <output expression="&quot;Loop - start value &quot; &amp; startv" newline="True"/>
+                <assign variable="startv" expression="startv + incrv"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
