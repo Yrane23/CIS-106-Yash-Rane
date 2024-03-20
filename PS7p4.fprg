@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="shiri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-19 07:27:34 PM"/>
+        <attribute name="created" value="c2hpcmk7UEM7MjAyNC0wMy0xOTswNzoxMTozNCBQTTsxOTcx"/>
+        <attribute name="edited" value="c2hpcmk7UEM7MjAyNC0wMy0xOTswNzoyNzozNCBQTTsxOzIwODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="continue" type="String" array="False" size=""/>
+            <output expression="&quot;Enter Response&quot;" newline="True"/>
+            <declare name="hours" type="Real" array="False" size=""/>
+            <declare name="grosspay" type="Real" array="False" size=""/>
+            <declare name="rate" type="Real" array="False" size=""/>
+            <input variable="continue"/>
+            <assign variable="continue" expression="&quot;Yes&quot;"/>
+            <while expression="Continue == &quot;Yes&quot;">
+                <output expression="&quot;Enter lastname&quot;" newline="True"/>
+                <input variable="lastname"/>
+                <output expression="&quot;Enter hours worked&quot;" newline="True"/>
+                <input variable="hours"/>
+                <output expression="&quot;Enter hourly rate&quot;" newline="True"/>
+                <input variable="rate"/>
+                <if expression="hours &gt;=40">
+                    <then>
+                        <assign variable="grosspay" expression="(40 * rate) + (hours - 40) * 1.5"/>
+                    </then>
+                    <else>
+                        <assign variable="grosspay" expression="rate * hours"/>
+                    </else>
+                </if>
+                <output expression="&quot;grosspay= &quot;&amp; grosspay" newline="True"/>
+                <output expression="&quot;Enter Response&quot;" newline="True"/>
+                <input variable="continue"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
